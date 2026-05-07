@@ -26,8 +26,8 @@ export default function Reviews() {
           <h3 className="font-syne font-bold text-2xl text-white mb-2">Join Our Growing Family of Happy Clients</h3>
           <p className="text-[#707070] mb-6">We're building our review base — every client gets our absolute best work.</p>
           <div className="flex justify-center gap-4">
-            <span className="px-4 py-2 bg-white/5 border border-white/10 rounded font-medium text-white text-sm">Google Reviews</span>
-            <span className="px-4 py-2 bg-white/5 border border-white/10 rounded font-medium text-white text-sm">Facebook Reviews</span>
+            <a href="https://g.page/r/CYmLLl9VYuUVEBM/review" target="_blank" className="border border-[#2A2A2A] px-4 py-2 rounded-md text-[#707070] hover:border-mint hover:text-mint hover:scale-105 transition-all cursor-pointer"> Google Reviews </a>
+            <a href="https://www.facebook.com/rankbuildgrow/reviews" target="_blank" className="border border-[#2A2A2A] px-4 py-2 rounded-md text-[#707070] hover:border-mint hover:text-mint hover:scale-105 transition-all cursor-pointer"> Facebook Reviews </a>
           </div>
         </GlassCard>
 
@@ -65,7 +65,7 @@ export default function Reviews() {
           <h3 className="font-syne font-bold text-2xl text-white mb-2">See Us on Google</h3>
           <div className="text-[#FFD700] text-2xl mb-2">★★★★★</div>
           <p className="text-[#707070] mb-6">We'd love your feedback.</p>
-          <Button href="#">Leave a Review →</Button>
+          <Button href="https://g.page/r/CYmLLl9VYuUVEBM/review">Leave a Review →</Button>
         </GlassCard>
         <GradientHeading className="mb-6">Ready to become our next success story?</GradientHeading>
         <Button href="/contact">Start Your Journey →</Button>
