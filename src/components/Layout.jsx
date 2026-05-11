@@ -55,7 +55,7 @@ const Navbar = () => {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="fixed inset-0 top-[72px] bg-primary/98 backdrop-blur-xl z-40 p-10 flex flex-col gap-6">
+          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="fixed inset-0 top-[72px] bg-[#0A0A0A] backdrop-blur-xl z-40 p-10 flex flex-col gap-6">
             {links.map((link) => (
               <Link key={link.name} to={link.path} onClick={() => setIsOpen(false)} className={`text-2xl font-syne font-bold ${location.pathname === link.path ? "text-mint" : "text-chrome"}`}>
                 {link.name}
