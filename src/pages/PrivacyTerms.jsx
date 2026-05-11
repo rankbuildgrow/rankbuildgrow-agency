@@ -3,13 +3,25 @@ import { Section } from "../components/ui";
 
 export default function PrivacyTerms() {
   const colorFix = `<style>
-    [data-custom-class='body_text'], [data-custom-class='body_text'] * { color: #00ff88 !important; }
-    [data-custom-class='heading_1'], [data-custom-class='heading_1'] * { color: #00ff88 !important; }
-    [data-custom-class='heading_2'], [data-custom-class='heading_2'] * { color: #00ff88 !important; }
-    [data-custom-class='link'], [data-custom-class='link'] * { color: #00ff88 !important; }
-   </style>`;
+  [data-custom-class='body_text'] * { color: #ffffff !important; }
+  [data-custom-class='body_text'] { color: #ffffff !important; }
+  [data-custom-class='heading_1'] * { color: #00ff88 !important; }
+  [data-custom-class='heading_1'] { color: #00ff88 !important; }
+  [data-custom-class='heading_2'] * { color: #00ff88 !important; }
+  [data-custom-class='heading_2'] { color: #00ff88 !important; }
+  [data-custom-class='heading_3'] * { color: #00ff88 !important; }
+  [data-custom-class='heading_3'] { color: #00ff88 !important; }
+  [data-custom-class='link'] * { color: #00ff88 !important; }
+  [data-custom-class='link'] { color: #00ff88 !important; }
+  span { color: #ffffff !important; }
+  p { color: #ffffff !important; }
+  li { color: #ffffff !important; }
+  h1, h2, h3, h4 { color: #00ff88 !important; }
+  strong { color: #ffffff !important; }
+  a { color: #00ff88 !important; }
+ </style>`;
 
-  const privacyHTML = colorFix + `<style>
+  const privacyHTML = `<style>
   [data-custom-class='body'], [data-custom-class='body'] * {
           background: transparent !important;
         }
@@ -68,8 +80,8 @@ Canada, Australia, and the United Kingdom.</bdt></span><bdt class="statement-end
       }
     </style>
       </div>
-      <br><div><span data-custom-class='body_text'>This Privacy Policy was created using Termly's </span><a href="https://termly.io/products/privacy-policy-generator/" target="_blank" rel="noopener external" data-custom-class='link'>Privacy Policy Generator</a></div>`;
-  const termsHTML = colorFix + `<style>
+      <br><div><span data-custom-class='body_text'>This Privacy Policy was created using Termly's </span><a href="https://termly.io/products/privacy-policy-generator/" target="_blank" rel="noopener external" data-custom-class='link'>Privacy Policy Generator</a></div>` + colorFix;
+  const termsHTML = `<style>
   [data-custom-class='body'], [data-custom-class='body'] * {
           background: transparent !important;
         }
@@ -210,7 +222,7 @@ Calibri;color:#595959;mso-themecolor:text1;mso-themetint:166;"><strong><bdt clas
       }
     </style>
       </div>
-      <br><div><span data-custom-class='body_text'>This Terms and Conditions was created using Termly's </span><a href="https://termly.io/products/terms-and-conditions-generator/" target="_blank" rel="noopener external" data-custom-class='link'>Terms and Conditions Generator</a></div>`;
+      <br><div><span data-custom-class='body_text'>This Terms and Conditions was created using Termly's </span><a href="https://termly.io/products/terms-and-conditions-generator/" target="_blank" rel="noopener external" data-custom-class='link'>Terms and Conditions Generator</a></div>` + colorFix;
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pt-32 pb-20">
       <div className="max-w-[800px] mx-auto px-5">
