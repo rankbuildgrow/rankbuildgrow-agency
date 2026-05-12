@@ -3,23 +3,21 @@ import { Section } from "../components/ui";
 
 export default function PrivacyTerms() {
   const colorFix = `<style>
-  [data-custom-class='body_text'] * { color: #ffffff !important; }
+  [data-custom-class='title'] { display: none !important; }
+  [data-custom-class='title'] * { display: none !important; }
+  [data-custom-class='subtitle'] { display: none !important; }
+  [data-custom-class='subtitle'] * { display: none !important; }
   [data-custom-class='body_text'] { color: #ffffff !important; }
-  [data-custom-class='heading_1'] * { color: #00ff88 !important; }
+  [data-custom-class='body_text'] * { color: #ffffff !important; }
   [data-custom-class='heading_1'] { color: #00ff88 !important; }
-  [data-custom-class='heading_2'] * { color: #00ff88 !important; }
+  [data-custom-class='heading_1'] * { color: #00ff88 !important; }
   [data-custom-class='heading_2'] { color: #00ff88 !important; }
-  [data-custom-class='heading_3'] * { color: #00ff88 !important; }
+  [data-custom-class='heading_2'] * { color: #00ff88 !important; }
   [data-custom-class='heading_3'] { color: #00ff88 !important; }
-  [data-custom-class='link'] * { color: #00ff88 !important; }
+  [data-custom-class='heading_3'] * { color: #00ff88 !important; }
   [data-custom-class='link'] { color: #00ff88 !important; }
-  span { color: #ffffff !important; }
-  p { color: #ffffff !important; }
-  li { color: #ffffff !important; }
-  h1, h2, h3, h4 { color: #00ff88 !important; }
-  strong { color: #ffffff !important; }
-  a { color: #00ff88 !important; }
- </style>`;
+  [data-custom-class='link'] * { color: #00ff88 !important; }
+</style>`;
 
   const privacyHTML = `<style>
   [data-custom-class='body'], [data-custom-class='body'] * {
