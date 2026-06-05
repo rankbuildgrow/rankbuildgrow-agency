@@ -22,13 +22,13 @@ export default function Portfolio() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <section className="pt-32 pb-16 text-center px-5">
         <h1 className="font-syne font-extrabold text-[40px] md:text-[56px] gradient-text mb-4">Our Work Speaks for Itself</h1>
-        <p className="text-[#707070] text-lg max-w-[600px] mx-auto">Real results from real businesses across the United States.</p>
+        <p className="text-[#888888] text-lg max-w-[600px] mx-auto">Real results from real businesses across the United States.</p>
       </section>
       
       <Section className="!pt-0">
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {["All", "Websites", "SEO", "Ads", "Apps"].map(f => (
-            <button key={f} onClick={() => setFilter(f)} className={`px-6 py-2 rounded-md font-medium transition-all ${filter === f ? "bg-mint text-primary" : "border border-[#2A2A2A] text-[#707070] hover:border-mint hover:text-mint"}`}>{f}</button>
+            <button key={f} onClick={() => setFilter(f)} className={`px-6 py-2 rounded-md font-medium transition-all ${filter === f ? "bg-mint text-primary" : "border border-[#2A2A2A] text-[#888888] hover:border-mint hover:text-mint"}`}>{f}</button>
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,7 +43,7 @@ export default function Portfolio() {
               <div className="p-6">
                 <span className="inline-block px-3 py-1 bg-mint text-primary text-xs font-semibold rounded mb-3">{p.tag}</span>
                 <h3 className="font-syne font-bold text-xl text-white mb-1">{p.t}</h3>
-                <p className="text-[#707070] text-sm mb-4">{p.l}</p>
+                <p className="text-[#888888] text-sm mb-4">{p.l}</p>
                 <div className="px-4 py-2 bg-mint/10 border border-mint/30 text-mint text-sm rounded-md font-medium">{p.r}</div>
               </div>
             </GlassCard>

@@ -18,7 +18,7 @@ export default function Contact() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <section className="pt-32 pb-16 text-center px-5">
         <h1 className="font-syne font-extrabold text-[40px] md:text-[56px] gradient-text mb-4">Let's Grow Your Business Together</h1>
-        <p className="text-[#707070] text-lg max-w-[600px] mx-auto">Get in touch and let's discuss how we can help you rank higher, build smarter, and grow faster.</p>
+        <p className="text-[#888888] text-lg max-w-[600px] mx-auto">Get in touch and let's discuss how we can help you rank higher, build smarter, and grow faster.</p>
       </section>
 
       <Section>
@@ -29,7 +29,7 @@ export default function Contact() {
             <div className="space-y-8 mb-10">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-mint/10 rounded-lg"><Mail className="text-mint w-6 h-6"/></div>
-                <div><h4 className="text-white font-medium mb-1">Email Us</h4><a href="mailto:hello@rankbuildgrow.com" className="text-[#707070] hover:text-mint">hello@rankbuildgrow.com</a></div>
+                <div><h4 className="text-white font-medium mb-1">Email Us</h4><a href="mailto:hello@rankbuildgrow.com" className="text-[#888888] hover:text-mint">hello@rankbuildgrow.com</a></div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-mint/10 rounded-lg"><MessageSquare className="text-mint w-6 h-6"/></div>
@@ -37,12 +37,12 @@ export default function Contact() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-mint/10 rounded-lg"><Clock className="text-mint w-6 h-6"/></div>
-                <div><h4 className="text-white font-medium mb-1">Response Time</h4><p className="text-[#707070]">We reply within 4 business hours</p></div>
+                <div><h4 className="text-white font-medium mb-1">Response Time</h4><p className="text-[#888888]">We reply within 4 business hours</p></div>
               </div>
             </div>
             
             <div className="border-t border-[#2A2A2A] pt-8">
-              <p className="text-[#707070] text-sm mb-4">Connect with us</p>
+              <p className="text-[#888888] text-sm mb-4">Connect with us</p>
               <div className="flex gap-4">
                 {/* Reusing SocialIcons logic without abstracting fully due to size, minimal version: */}
                 <a href="https://youtube.com/@RankBuildGrow" target="_blank" rel="noopener noreferrer" className="text-mint hover:text-mint transition-colors"> <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> </a>
@@ -69,13 +69,13 @@ export default function Contact() {
                     <input type="email" name="Business Email" required placeholder="Business Email *" className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-white focus:outline-none focus:border-mint" />
                   </div>
                   <input type="text" name="Business Name" required placeholder="Business Name *" className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-white focus:outline-none focus:border-mint" />
-                  <select name="Business Type" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#707070] focus:outline-none focus:border-mint appearance-none">
+                  <select name="Business Type" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#888888] focus:outline-none focus:border-mint appearance-none">
                     <option value="">Business Type *</option><option>Restaurant</option><option>Salon</option><option>Contractor</option><option>Healthcare</option><option>Real Estate</option><option>Law Firm</option><option>Retail</option><option>Other</option>
                   </select>
-                  <select name="Service Interested In" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#707070] focus:outline-none focus:border-mint appearance-none">
+                  <select name="Service Interested In" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#888888] focus:outline-none focus:border-mint appearance-none">
                     <option value="">Service Interested In *</option><option>Website Design</option><option>Local SEO</option><option>Google Ads</option><option>Meta Ads</option><option>Social Media</option><option>App Development</option><option>Full Package</option>
                   </select>
-                  <select name="Estimated Budget" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#707070] focus:outline-none focus:border-mint appearance-none">
+                  <select name="Estimated Budget" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#888888] focus:outline-none focus:border-mint appearance-none">
                     <option value="">Estimated Budget *</option><option>Under $500</option><option>$500–$1,000</option><option>$1,000–$5,000</option><option>$5,000+</option>
                   </select>
                   <textarea name="Project details" required rows="5" placeholder="Tell us about your project *" className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-white focus:outline-none focus:border-mint"></textarea>
@@ -88,7 +88,7 @@ export default function Contact() {
 
         <GlassCard className="w-full text-center py-12">
           <h3 className="font-syne font-bold text-3xl text-white mb-2">Get Your Free Website Audit</h3>
-          <p className="text-[#707070] mb-8 max-w-[600px] mx-auto">We'll analyze your current online presence and show you exactly where you're losing customers — completely free, no obligation.</p>
+          <p className="text-[#888888] mb-8 max-w-[600px] mx-auto">We'll analyze your current online presence and show you exactly where you're losing customers — completely free, no obligation.</p>
           {auditSubmitted ? (
             <p className="text-mint font-semibold">✓ Audit request received! We'll email your report soon.</p>
           ) : (

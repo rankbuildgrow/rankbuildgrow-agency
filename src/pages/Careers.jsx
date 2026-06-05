@@ -16,7 +16,7 @@ export default function Careers() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <section className="pt-32 pb-16 text-center px-5">
         <h1 className="font-syne font-extrabold text-[40px] md:text-[56px] gradient-text mb-4">Join the RankBuildGrow Team</h1>
-        <p className="text-[#707070] text-lg max-w-[600px] mx-auto">We're looking for talented people who are passionate about digital marketing and helping businesses grow.</p>
+        <p className="text-[#888888] text-lg max-w-[600px] mx-auto">We're looking for talented people who are passionate about digital marketing and helping businesses grow.</p>
       </section>
 
       <Section>
@@ -29,7 +29,7 @@ export default function Careers() {
           ].map(c => (
             <GlassCard key={c.t}>
               <h3 className="font-syne font-bold text-xl text-white mb-2">{c.t}</h3>
-              <p className="text-[#707070]">{c.d}</p>
+              <p className="text-[#888888]">{c.d}</p>
             </GlassCard>
           ))}
         </div>
@@ -44,7 +44,7 @@ export default function Careers() {
             <GlassCard key={j.t} className="flex flex-col md:flex-row justify-between items-center !p-6">
               <div>
                 <h3 className="font-syne font-bold text-xl text-white mb-2">{j.t}</h3>
-                <div className="flex gap-3"><span className="px-3 py-1 bg-white/5 text-xs text-[#707070] rounded">{j.type}</span><span className="px-3 py-1 bg-white/5 text-xs text-[#707070] rounded">Remote</span></div>
+                <div className="flex gap-3"><span className="px-3 py-1 bg-white/5 text-xs text-[#888888] rounded">{j.type}</span><span className="px-3 py-1 bg-white/5 text-xs text-[#888888] rounded">Remote</span></div>
               </div>
               <span className="mt-4 md:mt-0 px-4 py-2 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-sm font-medium rounded-md">Closed — check back soon</span>
             </GlassCard>
@@ -54,7 +54,7 @@ export default function Careers() {
         <div className="max-w-[700px] mx-auto">
           <div className="text-center mb-10">
             <GradientHeading>Apply Now</GradientHeading>
-            <p className="text-[#707070] mt-4">Don't see a role that fits? Send us your details anyway — we're always looking for exceptional talent.</p>
+            <p className="text-[#888888] mt-4">Don't see a role that fits? Send us your details anyway — we're always looking for exceptional talent.</p>
           </div>
           
           {submitted ? (
@@ -67,7 +67,7 @@ export default function Careers() {
                   <input type="text" name="Full Name" required placeholder="Full Name *" className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-white focus:outline-none focus:border-mint transition-colors" />
                   <input type="email" name="Email" required placeholder="Email *" className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-white focus:outline-none focus:border-mint transition-colors" />
                 </div>
-                <select name="Role Interested In" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#707070] focus:outline-none focus:border-mint transition-colors appearance-none">
+                <select name="Role Interested In" required className="w-full bg-primary border border-[#2A2A2A] rounded-md p-4 text-[#888888] focus:outline-none focus:border-mint transition-colors appearance-none">
                   <option value="">Role Interested In *</option><option>Digital Marketing</option><option>Web Development</option><option>Social Media</option><option>Graphic Design</option><option>Other</option>
                 </select>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

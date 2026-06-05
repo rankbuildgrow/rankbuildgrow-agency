@@ -10,7 +10,7 @@ const Reviews = lazy(() => import("./pages/Reviews"));
 const Careers = lazy(() => import("./pages/Careers"));
 const Contact = lazy(() => import("./pages/Contact"));
 const PrivacyTerms = lazy(() => import("./pages/PrivacyTerms"));
-
+const NotFound = lazy(() => import("./pages/NotFound"));
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
@@ -34,6 +34,7 @@ export default function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyTerms />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </AppLayout>

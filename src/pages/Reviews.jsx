@@ -18,16 +18,16 @@ export default function Reviews() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <section className="pt-32 pb-16 text-center px-5">
         <h1 className="font-syne font-extrabold text-[40px] md:text-[56px] gradient-text mb-4">What Our Clients Say About Us</h1>
-        <p className="text-[#707070] text-lg max-w-[600px] mx-auto">Real reviews from real business owners across the United States.</p>
+        <p className="text-[#888888] text-lg max-w-[600px] mx-auto">Real reviews from real business owners across the United States.</p>
       </section>
 
       <Section className="!pt-0">
         <GlassCard className="max-w-[600px] mx-auto text-center mb-16">
           <h3 className="font-syne font-bold text-2xl text-white mb-2">Join Our Growing Family of Happy Clients</h3>
-          <p className="text-[#707070] mb-6">We're building our review base — every client gets our absolute best work.</p>
+          <p className="text-[#888888] mb-6">We're building our review base — every client gets our absolute best work.</p>
           <div className="flex justify-center gap-4">
-            <span className="px-4 py-2 bg-white/5 border border-white/10 rounded font-medium text-white text-sm">Google Reviews</span>
-            <span className="px-4 py-2 bg-white/5 border border-white/10 rounded font-medium text-white text-sm">Facebook Reviews</span>
+            <a href="https://g.page/r/CYmLLl9VYuUVEBM/review" target="_blank" rel="noopener noreferrer" className="border border-[#2A2A2A] px-4 py-2 rounded-md text-[#888888] hover:border-mint hover:text-mint hover:scale-105 transition-all cursor-pointer">Google Reviews</a>
+            <a href="https://www.facebook.com/rankbuildgrow/reviews" target="_blank" rel="noopener noreferrer" className="border border-[#2A2A2A] px-4 py-2 rounded-md text-[#888888] hover:border-mint hover:text-mint hover:scale-105 transition-all cursor-pointer">Facebook Reviews</a>
           </div>
         </GlassCard>
 
@@ -37,10 +37,10 @@ export default function Reviews() {
               <div className="flex text-[#FFD700] mb-4">{"★★★★★".split("").map((s,i)=><span key={i}>{s}</span>)}</div>
               <p className="text-[#F5F5F5] italic mb-6 flex-grow">"{r.q}"</p>
               <div className="flex items-center gap-4 mt-auto">
-                <img src={`/images/client-${r.i}.jpg`} alt={r.n} className="w-[56px] h-[56px] rounded-full object-cover" loading="lazy" />
+                <img src={`/images/client-${r.i}.webp`} alt={r.n} className="w-[56px] h-[56px] rounded-full object-cover" loading="lazy" width="56" height="56" />
                 <div>
                   <h4 className="font-syne font-bold text-white">{r.n}</h4>
-                  <p className="text-[#707070] text-xs">{r.r}</p>
+                  <p className="text-[#888888] text-xs">{r.r}</p>
                 </div>
               </div>
             </GlassCard>
@@ -54,7 +54,7 @@ export default function Reviews() {
           {[1,2,3].map(i => (
             <div key={i} className="aspect-video bg-primary border border-[#2A2A2A] rounded-xl flex flex-col items-center justify-center cursor-pointer group hover:border-mint transition-colors">
               <div className="w-16 h-16 rounded-full bg-mint/10 border border-mint flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><div className="w-0 h-0 border-t-8 border-t-transparent border-l-[12px] border-l-mint border-b-8 border-b-transparent ml-1"></div></div>
-              <p className="text-[#707070] text-sm group-hover:text-white transition-colors">Video testimonial coming soon</p>
+              <p className="text-[#888888] text-sm group-hover:text-white transition-colors">Video testimonial coming soon</p>
             </div>
           ))}
         </div>
@@ -64,8 +64,8 @@ export default function Reviews() {
         <GlassCard className="max-w-[500px] mx-auto mb-16">
           <h3 className="font-syne font-bold text-2xl text-white mb-2">See Us on Google</h3>
           <div className="text-[#FFD700] text-2xl mb-2">★★★★★</div>
-          <p className="text-[#707070] mb-6">We'd love your feedback.</p>
-          <Button href="#">Leave a Review →</Button>
+          <p className="text-[#888888] mb-6">We'd love your feedback.</p>
+          <Button href="https://g.page/r/CYmLLl9VYuUVEBM/review">Leave a Review →</Button>
         </GlassCard>
         <GradientHeading className="mb-6">Ready to become our next success story?</GradientHeading>
         <Button href="/contact">Start Your Journey →</Button>
