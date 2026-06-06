@@ -31,41 +31,53 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 w-full z-50 h-[72px] bg-primary/95 backdrop-blur-[20px] border-b border-white/5">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-10 lg:px-[60px] h-full flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo.webp" alt="RankBuildGrow Logo" className="h-10 w-10 object-contain bg-mint/10 rounded-lg" width="40" height="40" />
-          <div className="flex flex-col">
-            <span className="font-syne font-bold text-[22px] text-[#F5F5F5] leading-none">RankBuildGrow</span>
-            <span className="font-inter text-[10px] text-mint uppercase tracking-[0.2em] mt-1">Digital Marketing Agency</span>
-          </div>
-        </Link>
-        <nav className="hidden lg:flex items-center gap-8">
-          {links.map((link) => (
-            <Link key={link.name} to={link.path} className={`font-inter text-[13px] transition-colors duration-200 ${location.pathname === link.path ? "text-[#F5F5F5]" : "text-[#888888] hover:text-mint"}`}>
-              {link.name}
-            </Link>
-          ))}
-          <Button variant="nav" href="/contact">Get Free Quote</Button>
-        </nav>
-        <button className="lg:hidden text-chrome" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close menu" : "Open menu"}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="fixed inset-0 top-[72px] bg-[#0A0A0A] z-[49] p-10 flex flex-col gap-6 overflow-y-auto">
+    <>
+      <header className="fixed top-0 w-full z-50 h-[72px] bg-primary/95 backdrop-blur-[20px] border-b border-white/5">
+        <div className="max-w-[1200px] mx-auto px-5 md:px-10 lg:px-[60px] h-full flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-3">
+            <img src="/images/logo.webp" alt="RankBuildGrow Logo" className="h-10 w-10 object-contain bg-mint/10 rounded-lg" width="40" height="40" />
+            <div className="flex flex-col">
+              <span className="font-syne font-bold text-[22px] text-[#F5F5F5] leading-none">RankBuildGrow</span>
+              <span className="font-inter text-[10px] text-mint uppercase tracking-[0.2em] mt-1">Digital Marketing Agency</span>
+            </div>
+          </Link>
+          <nav className="hidden lg:flex items-center gap-8">
             {links.map((link) => (
-              <Link key={link.name} to={link.path} onClick={() => setIsOpen(false)} className={`text-2xl font-syne font-bold ${location.pathname === link.path ? "text-mint" : "text-chrome"}`}>
+              <Link key={link.name} to={link.path} className={`font-inter text-[13px] transition-colors duration-200 ${location.pathname === link.path ? "text-[#F5F5F5]" : "text-[#888888] hover:text-mint"}`}>
                 {link.name}
               </Link>
             ))}
-            <Button variant="primary" href="/contact" className="mt-8">Get Free Quote</Button>
+            <Button variant="nav" href="/contact">Get Free Quote</Button>
+          </nav>
+          <button className="lg:hidden text-chrome" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Close menu" : "Open menu"}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </header>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed left-0 right-0 top-[72px] bottom-0 bg-[#0A0A0A] z-[999] px-8 py-6 flex flex-col gap-4 overflow-y-auto"
+          >
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
+                className={`text-xl font-syne font-bold py-3 border-b border-white/5 ${location.pathname === link.path ? "text-mint" : "text-chrome"}`}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Button variant="primary" href="/contact" className="mt-4">Get Free Quote</Button>
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };
 
