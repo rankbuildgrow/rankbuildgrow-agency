@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { Section, GradientHeading, GlassCard, Button } from "../components/ui";
 
 const portfolio = [
-  { i: "portfolio-restaurant.jpg", t: "Cultivating Elegance Restaurant", type: "Websites", tag: "Website Design", l: "Dallas, TX", r: "+40% increase in online reservations" },
-  { i: "portfolio-contractor.jpg", t: "Elite Builders Group", type: "Websites", tag: "Website + SEO + Ads", l: "Austin, TX", r: "Page 1 Google ranking in 45 days" },
-  { i: "portfolio-salon.jpg", t: "Opulence Beauty", type: "Websites", tag: "Website Design", l: "Miami, FL", r: "+40% increase in bookings" },
-  { i: "portfolio-seo.jpg", t: "SmileCare Dental", type: "SEO", tag: "Local SEO", l: "Houston, TX", r: "+250% increase in patient enquiries" },
-  { i: "portfolio-ads.jpg", t: "Luxury Homes Realty", type: "Ads", tag: "Google Ads", l: "Los Angeles, CA", r: "3x return on ad spend" },
-  { i: "portfolio-social.jpg", t: "Fashion Forward Retail", type: "Ads", tag: "Meta Ads + Social", l: "New York, NY", r: "+160% increase in online sales" },
-  { i: "portfolio-app1.jpg", t: "QuickBite Restaurant App", type: "Apps", tag: "App Development", l: "Chicago, IL", r: "4.8 star rating, 5,000+ downloads" },
-  { i: "portfolio-app2.jpg", t: "FitTrack Fitness App", type: "Apps", tag: "App Development", l: "Miami, FL", r: "2,000+ active monthly users" },
-  { i: "portfolio-dental.jpg", t: "PearlSmile Dental", type: "Websites", tag: "Website Design", l: "Phoenix, AZ", r: "+35% new patient appointments" },
+  { i: "portfolio-restaurant.webp", t: "Cultivating Elegance Restaurant", type: "Websites", tag: "Website Design", l: "Dallas, TX", r: "+40% increase in online reservations" },
+  { i: "portfolio-contractor.webp", t: "Elite Builders Group", type: "Websites", tag: "Website + SEO + Ads", l: "Austin, TX", r: "Page 1 Google ranking in 45 days" },
+  { i: "portfolio-salon.webp", t: "Opulence Beauty", type: "Websites", tag: "Website Design", l: "Miami, FL", r: "+40% increase in bookings" },
+  { i: "portfolio-seo.webp", t: "SmileCare Dental", type: "SEO", tag: "Local SEO", l: "Houston, TX", r: "+250% increase in patient enquiries" },
+  { i: "portfolio-ads.webp", t: "Luxury Homes Realty", type: "Ads", tag: "Google Ads", l: "Los Angeles, CA", r: "3x return on ad spend" },
+  { i: "portfolio-social.webp", t: "Fashion Forward Retail", type: "Ads", tag: "Meta Ads + Social", l: "New York, NY", r: "+160% increase in online sales" },
+  { i: "portfolio-app1.webp", t: "QuickBite Restaurant App", type: "Apps", tag: "App Development", l: "Chicago, IL", r: "4.8 star rating, 5,000+ downloads" },
+  { i: "portfolio-app2.webp", t: "FitTrack Fitness App", type: "Apps", tag: "App Development", l: "Miami, FL", r: "2,000+ active monthly users" },
+  { i: "portfolio-dental.webp", t: "PearlSmile Dental", type: "Websites", tag: "Website Design", l: "Phoenix, AZ", r: "+35% new patient appointments" },
 ];
 
 export default function Portfolio() {

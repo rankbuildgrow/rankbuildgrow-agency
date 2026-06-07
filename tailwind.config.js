@@ -13,6 +13,7 @@ export default {
         border: '#2A2A2A',
         mint: '#00FF94',
         chrome: '#E8E8E8',
+        muted: '#888888',
       },
       fontFamily: {
         syne: ['Syne', 'sans-serif'],
