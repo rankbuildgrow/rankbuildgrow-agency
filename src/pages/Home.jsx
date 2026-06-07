@@ -55,9 +55,23 @@ export default function Home() {
         <p className="font-inter text-[13px] text-[#888888] mb-3">Trusted by businesses across</p>
         <div className="w-full overflow-hidden flex whitespace-nowrap">
           <div className="animate-marquee flex gap-12 items-center text-[#F5F5F5] font-inter text-lg">
-            {["🇺🇸 United States", "🇨🇦 Canada", "🇦🇺 Australia", "🇬🇧 United Kingdom", "🇳🇿 New Zealand", "🇺🇸 United States", "🇨🇦 Canada", "🇦🇺 Australia", "🇬🇧 United Kingdom", "🇳🇿 New Zealand"].map((c, i) => (
-              <span key={i} className="flex items-center gap-2">{c}</span>
-            ))}
+            {[
+              { flag: "us", name: "United States" },
+              { flag: "ca", name: "Canada" },
+              { flag: "au", name: "Australia" },
+              { flag: "gb", name: "United Kingdom" },
+              { flag: "nz", name: "New Zealand" },
+              { flag: "us", name: "United States" },
+              { flag: "ca", name: "Canada" },
+              { flag: "au", name: "Australia" },
+              { flag: "gb", name: "United Kingdom" },
+              { flag: "nz", name: "New Zealand" },
+             ].map((c, i) => (
+               <span key={i} className="flex items-center gap-2">
+                <img src={`https://flagcdn.com/24x18/${c.flag}.png`} alt={c.name} width="24" height="18" />
+                {c.name}
+               </span>
+             ))}
           </div>
         </div>
       </section>
